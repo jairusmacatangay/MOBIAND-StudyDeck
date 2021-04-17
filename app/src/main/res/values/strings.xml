@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MOBIAND_StudyDeck</string>
+    <string name="flashcard_label">Definition</string>
+    <string name="flashcard_content">is when a company is able to outperform its competitors by running its operations more efficiently, making better, less expensive products, and becoming more appealing to consumers</string>
+    <string name="flashcard_number">10 / 10</string>
+    <string name="button_back">Back</string>
+    <string name="button_flip">Flip</string>
+    <string name="button_next">Next</string>
 </resources>
