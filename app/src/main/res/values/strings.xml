@@ -16,4 +16,8 @@
     <string name="wordJumbleHeader">Guess the Word!</string>
     <string name="previousWord">Back</string>
     <string name="nextWord">Next</string>
+
+    <string name="Term">Term</string>
+    <string name="TermIn" />
+    <string name="Definition">Definition</string>
 </resources>
