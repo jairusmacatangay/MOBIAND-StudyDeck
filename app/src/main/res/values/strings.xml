@@ -12,4 +12,8 @@
     <string name="quizQuit">Quit</string>
     <string name="totalScore">0</string>
     <string name="totalQuestions">1</string>
+
+    <string name="wordJumbleHeader">Guess the Word!</string>
+    <string name="previousWord">Back</string>
+    <string name="nextWord">Next</string>
 </resources>
