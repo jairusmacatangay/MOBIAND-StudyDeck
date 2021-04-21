@@ -68,7 +68,6 @@ class FlashcardActivity : AppCompatActivity() {
      * Function is used to show the list on UI of inserted data.
      */
     private fun setupListofDataIntoRecyclerView() {
-
         if (getItemsList().size > 0) {
 
             binding.rvList.visibility = View.VISIBLE
