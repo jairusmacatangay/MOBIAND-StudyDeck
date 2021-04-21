@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primary_dark"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -34,7 +35,8 @@
                     android:id="@+id/textViewTerm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Term" />
+                    android:text="@string/Term"
+                    android:textColor="@color/white"/>
 
                 <EditText
                     android:id="@+id/etTerm"
@@ -43,7 +45,9 @@
                     android:ems="10"
                     android:hint="Enter Term"
                     android:inputType="textPersonName"
-                    android:text="@string/TermIn" />
+                    android:text="@string/TermIn"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -55,7 +59,8 @@
                     android:id="@+id/textViewDefinition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Definition" />
+                    android:text="@string/Definition"
+                    android:textColor="@color/white" />
 
                 <EditText
                     android:id="@+id/etDefinition"
@@ -63,7 +68,9 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Enter Definition"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"/>
 
             </LinearLayout>
 
