@@ -11,7 +11,7 @@ class ResultActivity : AppCompatActivity() {
     private var totalQuizItems: Int = 0
     private var totalScore: Int = 0
     private var percentageScore: Int = 0
-    private lateinit var extra1:String
+    private var extra1:Int = 0
     private lateinit var extra2:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +20,9 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        extra1 = intent.getStringExtra(QUIZ_SCORE) ?: getString(R.string.totalScore)
+        extra1 = intent.getIntExtra(QUIZ_SCORE.toString(), 0)
         extra2 = intent.getStringExtra(TOTAL_ITEMS_OF_QUIZ) ?: getString(R.string.totalQuestions)
-        totalScore = extra1.toInt()
+        totalScore = extra1
         totalQuizItems = extra2.toInt()
 
         computePercentage(totalScore)

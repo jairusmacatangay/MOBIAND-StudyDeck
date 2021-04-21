@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOBIAND_StudyDeck">
         <activity android:name=".WordJumbleActivity"/>
-        <activity android:name=".QuizActivity" />
+        <activity android:name=".StudyActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".FlashcardActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".StudyActivity">
+        <activity android:name=".QuizActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
