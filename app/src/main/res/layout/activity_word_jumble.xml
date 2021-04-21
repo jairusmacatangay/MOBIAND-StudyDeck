@@ -11,36 +11,36 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/wordJumbleHeader"
+        android:textColor="@color/white"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:backgroundTint="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TextView
             android:id="@+id/txtWord"
-            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingTop="50dp"
             android:paddingBottom="50dp"
             android:text="Word Jumble"
+            android:textColor="@color/white"
             android:textSize="28sp" />
     </androidx.cardview.widget.CardView>
 
@@ -54,9 +54,9 @@
         android:hint="Enter Answer"
         android:inputType="text"
         android:textAllCaps="true"
-        android:textSize="21sp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
+        android:textSize="21sp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,6 @@
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:text="@string/nextWord"
         android:textSize="16sp"
@@ -81,48 +80,48 @@
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="24dp"
         android:text="@string/previousWord"
         android:textSize="16sp"
         app:icon="@drawable/ic_navigate_before"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount"
         app:layout_constraintEnd_toStartOf="@+id/txtCount"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCount" />
 
     <TextView
         android:id="@+id/txtCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:text="1 / 10"
-        android:textSize="21sp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
         app:layout_constraintEnd_toStartOf="@+id/btnNext"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnBack" />
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
 
     <Button
         android:id="@+id/btnHint"
-        android:layout_width="60dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:text="Button"
+        android:text="Hint"
         app:icon="@drawable/ic_baseline_help"
         app:iconGravity="start"
         app:iconSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCheck"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toTopOf="@+id/btnCheck" />
 
     <Button
         android:id="@+id/btnCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="Check"
         android:textSize="16sp"
         app:icon="@drawable/ic_baseline_check"

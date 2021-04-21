@@ -11,10 +11,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:text="@string/quizResult"
+        android:textColor="@color/white"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +22,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:backgroundTint="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/primary"
         app:contentPadding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,21 +43,22 @@
                 android:id="@+id/txtFeedback"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
                 android:gravity="center"
-                android:paddingTop="10dp"
-                android:paddingBottom="50dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="15dp"
                 android:text="Feedback"
+                android:textColor="@color/white"
                 android:textSize="26sp" />
 
             <TextView
                 android:id="@+id/txtScore"
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="30dp"
                 android:text="Score"
+                android:textColor="@color/white"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -67,25 +68,11 @@
         android:id="@+id/btnQuizRestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/quizRestart"
         android:textSize="16sp"
         app:icon="@drawable/ic_baseline_refresh"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnResultQuit"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
-    <Button
-        android:id="@+id/btnResultQuit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/quizQuit"
-        android:textSize="16sp"
-        app:icon="@drawable/ic_baseline_exit_to_app"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnQuizRestart"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
