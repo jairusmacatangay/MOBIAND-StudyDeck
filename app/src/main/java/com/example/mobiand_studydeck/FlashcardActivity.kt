@@ -73,7 +73,7 @@ class FlashcardActivity : AppCompatActivity() {
         } else {
             Toast.makeText(
                     applicationContext,
-                    "Name or Email cannot be blank",
+                    "Term or definition cannot be blank",
                     Toast.LENGTH_LONG
             ).show()
         }
@@ -144,7 +144,7 @@ class FlashcardActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(
                     applicationContext,
-                    "Name or Email cannot be blank",
+                    "Term or definition cannot be blank",
                     Toast.LENGTH_LONG
                 ).show()
             }
