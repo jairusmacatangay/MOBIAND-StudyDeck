@@ -2,8 +2,11 @@ package com.example.mobiand_studydeck
 
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -28,6 +31,31 @@ class FlashcardActivity : AppCompatActivity() {
         }
 
         setupListofDataIntoRecyclerView()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_flashcard, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.itemStudy -> {
+                val intent = Intent(this, StudyActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.itemQuiz -> {
+                val intent = Intent(this, QuizActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            else -> {
+                val intent = Intent(this, WordJumbleActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
     }
 
     private fun addRecord() {

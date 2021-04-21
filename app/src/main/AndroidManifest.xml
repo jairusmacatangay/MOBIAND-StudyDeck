@@ -12,9 +12,9 @@
         <activity android:name=".QuizActivity"/>
         <activity android:name=".StudyActivity" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".FlashcardActivity" />
+        <activity android:name=".WordJumbleActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".WordJumbleActivity">
+        <activity android:name=".FlashcardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
